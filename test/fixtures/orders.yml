@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  OrderID: MyString
+  Items: MyText
+  Total: 1.5
+  ShippingAddress: MyText
+
+two:
+  OrderID: MyString
+  Items: MyText
+  Total: 1.5
+  ShippingAddress: MyText
