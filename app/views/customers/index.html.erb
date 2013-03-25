@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Customer ID</th>
     <th>Firstname</th>
     <th>Lastname</th>
     <th>Shippingaddress</th>
@@ -13,13 +14,14 @@
 
 <% @customers.each do |customer| %>
   <tr>
+    <td><%= customer.customerid %></td>
     <td><%= customer.firstName %></td>
     <td><%= customer.lastName %></td>
     <td><%= customer.shippingAddress %></td>
     <td><%= customer.billingAddress %></td>
     <td><%= link_to 'Show', customer %></td>
     <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-    <td><%= link_to 'Destroy', customer, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', customer, :method => :delete, :data => { :confirm => 'Are you sure you want to delete this Customer?' } %></td>
   </tr>
 <% end %>
 </table>
